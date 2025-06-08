@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Vincent</title>
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,700" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic"
+    rel="stylesheet" />
+
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-top">
+      <div class="schedule">
+        <img src="./assets/images/icon_phone.png" alt="">
+        <div class="schedule-right">
+          <div class="phone">+54 1223 1558</div>
+          <div class="time">8:00 am – 11:30 pm</div>
+        </div>
+      </div>
+
+      <div class="logo"><img src="./assets/images/logo.png" alt=""></div>
+
+      <div class="cart">
+        <img src="/assets/images/icon_cart.png" alt="">
+        <div class="cart-left">
+          <div class="amount">$0.00</div>
+          <div class="items">0 Productos - Ver Carrito</div>
+        </div>
+      </div>
+
+      <div class="menu-btn active">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+
+    <ul class="nav active">
+      <li><a href="#" class="active">HOME</a></li>
+      <li><a href="#">MENU</a></li>
+      <li><a href="#">NOSOTROS</a></li>
+      <li><a href="#">BLOG</a></li>
+      <li><a href="#">TIENDA</a></li>
+      <li><a href="#">CONTACTO</a></li>
+    </ul>
+  </header>
+
+  <main>
+
+    <div class="hero">
+      <div class="imgBx">
+        <img src="./assets/images/pizza_2.png" alt="">
+      </div>
+
+      <div class="contentBx">
+        <h1>MAMMA MIA.</h1>
+        <h2>Conquistando paladares.</h2>
+        <p>Comida de autor</p>
+        <div class="btn">VER MENÚ</div>
+      </div>
+    </div>
+
+  </main>
+
+
+  <script>
+
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('.nav');
+
+    menuBtn.addEventListener('click', function () {
+      this.classList.toggle('active');
+      nav.classList.toggle('active');
+    });
+
+  </script>
+
+</body>
+
+</html>
